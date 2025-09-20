@@ -1,0 +1,106 @@
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{xcolor}
+
+% 设置 Python 代码高亮
+\lstdefinestyle{pythonstyle}{
+    language=Python,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    backgroundcolor=\color{gray!10},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2
+}
+
+\begin{document}
+
+\section{Scipy 中的非线性规划：minimize 函数}
+
+在科学计算和优化问题中，\texttt{scipy} 库提供了强大的工具来解决非线性规划问题。其中，\texttt{scipy.optimize.minimize} 函数是一个非常实用的工具，它可以用于求解带约束和不带约束的非线性优化问题。
+
+\subsection{函数原型}
+\texttt{scipy.optimize.minimize} 函数的原型如下：
+\begin{lstlisting}[style=pythonstyle]
+scipy.optimize.minimize(fun, x0, args=(), method=None, jac=None, hess=None, hessp=None, bounds=None, constraints=(), tol=None, callback=None, options=None)
+\end{lstlisting}
+各参数的含义如下：
+\begin{itemize}
+    \item \texttt{fun}：需要最小化的目标函数。
+    \item \texttt{x0}：初始猜测值，是一个数组。
+    \item \texttt{args}：传递给目标函数和约束函数的额外参数。
+    \item \texttt{method}：优化算法，可选值有 \texttt{'Nelder - Mead'}、\texttt{'Powell'}、\texttt{'CG'}、\texttt{'BFGS'}、\texttt{'Newton - CG'}、\texttt{'L - BFGS - B'}、\texttt{'TNC'}、\texttt{'COBYLA'}、\texttt{'SLSQP'} 等。
+    \item \texttt{jac}：目标函数的雅可比矩阵（一阶导数）。
+    \item \texttt{hess}：目标函数的海森矩阵（二阶导数）。
+    \item \texttt{hessp}：海森矩阵与向量的乘积。
+    \item \texttt{bounds}：变量的边界约束。
+    \item \texttt{constraints}：约束条件。
+    \item \texttt{tol}：收敛精度。
+    \item \texttt{callback}：每次迭代后调用的回调函数。
+    \item \texttt{options}：优化算法的选项。
+\end{itemize}
+
+\subsection{示例问题}
+考虑一个简单的非线性规划问题：
+
+最小化目标函数
+\[
+f(x_1, x_2) = (x_1 - 1)^2 + (x_2 - 2.5)^2
+\]
+
+约束条件：
+\begin{align*}
+x_1 - 2x_2 + 2 &\geq 0 \\
+-x_1 - 2x_2 + 6 &\geq 0 \\
+-x_1 + 2x_2 + 2 &\geq 0 \\
+x_1 &\geq 0 \\
+x_2 &\geq 0
+\end{align*}
+
+以下是使用 \texttt{scipy.optimize.minimize} 函数解决该问题的 Python 代码：
+\begin{lstlisting}[style=pythonstyle]
+import numpy as np
+from scipy.optimize import minimize
+
+# 定义目标函数
+def objective(x):
+    return (x[0] - 1) ** 2 + (x[1] - 2.5) ** 2
+
+# 定义约束条件
+constraints = [
+    {'type': 'ineq', 'fun': lambda x: x[0] - 2 * x[1] + 2},
+    {'type': 'ineq', 'fun': lambda x: -x[0] - 2 * x[1] + 6},
+    {'type': 'ineq', 'fun': lambda x: -x[0] + 2 * x[1] + 2}
+]
+
+# 定义变量的边界约束
+bounds = [(0, None), (0, None)]
+
+# 初始猜测值
+x0 = np.array([2, 0])
+
+# 使用 SLSQP 方法进行优化
+result = minimize(objective, x0, method='SLSQP', bounds=bounds, constraints=constraints)
+
+# 输出结果
+if result.success:
+    print("最优解找到！")
+    print(f"最优解: {result.x}")
+    print(f"最优值: {result.fun}")
+else:
+    print("优化过程失败。")
+\end{lstlisting}
+
+通过上述代码，我们可以利用 \texttt{scipy.optimize.minimize} 函数有效地解决非线性规划问题。不同的问题可能需要选择不同的优化算法和设置合适的参数。
+
+\end{document}

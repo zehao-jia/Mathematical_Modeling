@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\usepackage{ctex}
+\usepackage{amsmath}
+
+\begin{document}
+\title{使用函数}
+\author{\kaishu{贾泽昊}}
+\date{\today}
+\maketitle
+
+\section{函数}
+使用python求解整数规划,使用pulp库的函数
+
+\subsection{lpproblem}
+lpproblem函数用于创建一个线性规划问题,返回一个线性规划问题的实例,
+该实例包含一个线性规划问题,一个线性约束集合和一个变量集合.
+\begin{center}
+\large Lpproblem(name,sense)
+\end{center}
+\par name:线性规划问题的名称
+\par sense:线性规划问题的目标函数,可以是min或者max
+
+\subsection{LpVariable}
+LpVariable函数用于创建一个线性规划问题的变量,返回一个线性规划问题的变量,
+\begin{center}
+\large LpVariable(name,lowBound,upBound,cat)
+\end{center}
+\par name:变量的名称
+\par lowBound:变量的下界
+\par upBound:变量的上界
+\par cat:变量的类型,可以为continuous(连续类型), integer(整数类型), binary(01类型)
+
+\end{document}

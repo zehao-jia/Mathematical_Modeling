@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{ctex}
+
+\title{多目标规划讲解}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{引言}
+在实际的决策问题中，往往需要同时考虑多个相互冲突的目标。例如，在生产计划中，我们可能希望最大化利润的同时最小化成本；在城市规划中，我们可能需要同时考虑交通流量最小化和土地利用效率最大化等。多目标规划（Multi - Objective Programming, MOP）就是为了解决这类问题而发展起来的一种数学规划方法。
+
+\section{基本概念}
+\subsection{多目标规划问题的定义}
+一般地，多目标规划问题可以表示为：
+\begin{align}
+\min_{x \in X} \quad & F(x) = (f_1(x), f_2(x), \cdots, f_k(x))^T \\
+\text{s.t.} \quad & g_i(x) \leq 0, \quad i = 1, 2, \cdots, m \\
+& h_j(x) = 0, \quad j = 1, 2, \cdots, l
+\end{align}
+其中，$x=(x_1,x_2,\cdots,x_n)^T$ 是决策变量向量，$X \subseteq \mathbb{R}^n$ 是可行域，$f_i(x)$（$i = 1, 2, \cdots, k$）是目标函数，$g_i(x)$（$i = 1, 2, \cdots, m$）是不等式约束函数，$h_j(x)$（$j = 1, 2, \cdots, l$）是等式约束函数。
+
+\subsection{解的概念}
+在单目标规划中，最优解是唯一确定的。但在多目标规划中，由于各个目标之间可能存在冲突，通常不存在一个能同时使所有目标达到最优的解。因此，需要引入一些特殊的解的概念。
+
+\subsubsection{有效解（Pareto 最优解）}
+设 $x^*, x \in X$，如果不存在 $x \in X$ 使得 $F(x) \leq F(x^*)$ 且 $F(x) \neq F(x^*)$，则称 $x^*$ 是多目标规划问题的有效解（Pareto 最优解）。这里，$F(x) \leq F(x^*)$ 表示 $f_i(x) \leq f_i(x^*)$ 对所有 $i = 1, 2, \cdots, k$ 成立。
+
+\subsubsection{弱有效解}
+设 $x^*, x \in X$，如果不存在 $x \in X$ 使得 $F(x) < F(x^*)$，则称 $x^*$ 是多目标规划问题的弱有效解。这里，$F(x) < F(x^*)$ 表示 $f_i(x) < f_i(x^*)$ 对所有 $i = 1, 2, \cdots, k$ 成立。
+
+\section{多目标规划的求解方法}
+\subsection{加权法}
+加权法是将多目标规划问题转化为单目标规划问题的一种常用方法。具体做法是给每个目标函数 $f_i(x)$ 赋予一个权重 $\omega_i$（$\omega_i \geq 0$，$\sum_{i = 1}^{k} \omega_i = 1$），然后构造一个加权和目标函数：
+\[
+\min_{x \in X} \quad \sum_{i = 1}^{k} \omega_i f_i(x)
+\]
+通过求解这个单目标规划问题，可以得到一个有效解。不同的权重向量 $\omega = (\omega_1, \omega_2, \cdots, \omega_k)^T$ 可以得到不同的有效解。
+
+\subsection{$\varepsilon$-约束法}
+$\varepsilon$-约束法是将其中一个目标函数作为主要目标函数，而将其他目标函数转化为约束条件。设我们选择 $f_1(x)$ 作为主要目标函数，则 $\varepsilon$-约束法可以表示为：
+\begin{align}
+\min_{x \in X} \quad & f_1(x) \\
+\text{s.t.} \quad & f_i(x) \leq \varepsilon_i, \quad i = 2, 3, \cdots, k \\
+& g_j(x) \leq 0, \quad j = 1, 2, \cdots, m \\
+& h_l(x) = 0, \quad l = 1, 2, \cdots, p
+\end{align}
+其中，$\varepsilon_i$（$i = 2, 3, \cdots, k$）是预先给定的约束值。
+
+\section{应用实例}
+考虑一个简单的生产计划问题。假设一个工厂生产两种产品 $A$ 和 $B$，生产产品 $A$ 每件需要 $2$ 个单位的原材料和 $3$ 个单位的劳动力，生产产品 $B$ 每件需要 $4$ 个单位的原材料和 $2$ 个单位的劳动力。工厂每天可用的原材料为 $100$ 个单位，劳动力为 $80$ 个单位。产品 $A$ 的每件利润为 $5$ 元，产品 $B$ 的每件利润为 $6$ 元。同时，为了满足市场需求，产品 $A$ 的产量不能低于 $10$ 件。
+
+我们的目标是在满足约束条件的前提下，最大化总利润 $f_1(x_1, x_2)=5x_1 + 6x_2$，同时最小化生产时间 $f_2(x_1, x_2)=3x_1 + 2x_2$，其中 $x_1$ 和 $x_2$ 分别是产品 $A$ 和产品 $B$ 的产量。
+
+该问题可以表示为以下多目标规划问题：
+\begin{align}
+\max_{x_1, x_2} \quad & f_1(x_1, x_2)=5x_1 + 6x_2 \\
+\min_{x_1, x_2} \quad & f_2(x_1, x_2)=3x_1 + 2x_2 \\
+\text{s.t.} \quad & 2x_1 + 4x_2 \leq 100 \\
+& 3x_1 + 2x_2 \leq 80 \\
+& x_1 \geq 10 \\
+& x_1, x_2 \geq 0
+\end{align}
+
+我们可以使用加权法将其转化为单目标规划问题。设权重 $\omega_1 = 0.6$，$\omega_2 = 0.4$，则加权和目标函数为：
+\[
+\max_{x_1, x_2} \quad 0.6(5x_1 + 6x_2)-0.4(3x_1 + 2x_2)=1.8x_1 + 2.8x_2
+\]
+同时满足上述约束条件。通过求解这个单目标规划问题，我们可以得到一个有效解。
+
+\section{结论}
+多目标规划是一种处理多个相互冲突目标的重要数学规划方法。在实际应用中，需要根据具体问题的特点选择合适的求解方法。不同的求解方法可能会得到不同的有效解，决策者可以根据自己的偏好和实际情况选择最优的解决方案。
+
+\end{document} 
