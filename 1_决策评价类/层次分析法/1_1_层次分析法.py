@@ -20,3 +20,14 @@ copy_a=copy_a/b
 copy_a=np.sum(copy_a,axis=1)#按行求和
 w=copy_a/np.sum(copy_a)#归一化
 print (w)
+
+tar_1 = np.array([1, 4, 12, 14])
+tar_2 = np.array([2, 4, 6, 8])
+tar_1 = tar_1/np.sum(tar_1)
+tar_2 = tar_2/np.sum(tar_2)
+
+grades_1 = (tar_1*w).sum()
+grades_2 = (tar_2*w).sum()
+
+print (grades_1)
+print (grades_2)
