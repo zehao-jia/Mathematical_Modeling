@@ -1,0 +1,24 @@
+\documentclass{ctexart}
+\usepackage[hidelinks]{hyperref}
+\usepackage{booktabs}
+%不使用hidelinks会使引用处出现红色方框
+\renewcommand{\tableautorefname}{表}
+%
+
+\begin{document}
+\begin{table}[htbp]
+    \centering
+    \caption{表格的标题为caption}
+    \begin{tabular}[b]{*{5}{c}}
+    \toprule
+    1 & 2 & 3 & 4 & 5 \\
+    \bottomrule
+    \end{tabular}
+    \label{tab:examdata}
+\end{table}
+
+\newpage
+
+根据\autoref{tab:examdata}可得...
+
+\end{document}
