@@ -39,7 +39,7 @@ scipy.optimize.minimize(fun, x0, args=(), method=None, jac=None, hess=None, hess
     \item \texttt{fun}：需要最小化的目标函数。
     \item \texttt{x0}：初始猜测值，是一个数组。
     \item \texttt{args}：传递给目标函数和约束函数的额外参数。
-    \item \texttt{method}：优化算法，可选值有 \texttt{'Nelder - Mead'}、\texttt{'Powell'}、\texttt{'CG'}、\texttt{'BFGS'}、\texttt{'Newton - CG'}、\texttt{'L - BFGS - B'}、\texttt{'TNC'}、\texttt{'COBYLA'}、\texttt{'SLSQP'} 等。
+    \item \texttt{method}：优化算法，可选值有 \texttt{'Nelder - Mead'单纯形法}、\texttt{'Powell'}、\texttt{'CG'}、\texttt{'BFGS'}、\texttt{'Newton - CG'}、\texttt{'L - BFGS - B'}、\texttt{'TNC'}、\texttt{'COBYLA'}、\texttt{'SLSQP'} 等。
     \item \texttt{jac}：目标函数的雅可比矩阵（一阶导数）。
     \item \texttt{hess}：目标函数的海森矩阵（二阶导数）。
     \item \texttt{hessp}：海森矩阵与向量的乘积。

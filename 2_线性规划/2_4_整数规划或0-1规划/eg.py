@@ -13,11 +13,11 @@ x1 = LpVariable("x1", lowBound=0, cat=pulp.LpInteger)
 x2 = LpVariable("x2", lowBound=0, cat=pulp.LpInteger)
 
 #目标函数
-problem += 40*x1 + 30*x2
+problem += 40*x1 + 30*x2,"Total_Experience"
 
 #约束条件
-problem += 2*x1 + 3*x2 <= 60
-problem += 3*x1 + 2*x2 <= 50
+problem += 2*x1 + 3*x2 <= 60,"Constraint1"
+problem += 3*x1 + 2*x2 <= 50,"Constraint2"
 
 #求解
 problem.solve()
