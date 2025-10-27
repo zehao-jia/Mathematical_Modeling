@@ -1,0 +1,388 @@
+Label,p1_sets,p2_sets,p1_games,p2_games,rally_count,speed_mph,server
+0,0,0,1,2,1,"speed_mph    133
+speed_mph    133
+Name: 18, dtype: int64",2
+1,0,1,1,0,1,"speed_mph    179
+speed_mph    179
+Name: 60, dtype: int64",1
+1,0,1,2,1,1,"speed_mph    133
+speed_mph    133
+Name: 71, dtype: int64",1
+0,1,1,3,1,3,"speed_mph    0
+speed_mph    0
+Name: 21, dtype: int64",2
+0,1,1,4,2,3,"speed_mph    0
+speed_mph    0
+Name: 29, dtype: int64",2
+1,1,2,2,1,2,"speed_mph    0
+speed_mph    0
+Name: 79, dtype: int64",1
+0,1,2,5,4,2,"speed_mph    0
+speed_mph    0
+Name: 5, dtype: int64",2
+1,2,2,2,1,1,"speed_mph    0
+speed_mph    0
+Name: 26, dtype: int64",1
+0,3,2,0,1,1,"speed_mph    0
+speed_mph    0
+Name: 64, dtype: int64",2
+0,3,2,3,3,1,"speed_mph    175
+speed_mph    175
+Name: 0, dtype: int64",2
+1,3,2,4,4,2,"speed_mph    143
+speed_mph    143
+Name: 8, dtype: int64",2
+0,3,2,5,6,2,"speed_mph    177
+speed_mph    177
+Name: 25, dtype: int64",1
+1,3,3,2,4,4,"speed_mph    133
+speed_mph    133
+Name: 65, dtype: int64",2
+1,3,4,1,0,1,"speed_mph    201
+speed_mph    201
+Name: 93, dtype: int64",2
+0,3,4,1,1,2,"speed_mph    152
+speed_mph    152
+Name: 0, dtype: int64",2
+1,3,4,3,1,0,"speed_mph    180
+speed_mph    180
+Name: 8, dtype: int64",1
+0,4,4,2,1,2,"speed_mph    149
+speed_mph    149
+Name: 78, dtype: int64",1
+0,5,4,2,1,1,"speed_mph    159
+speed_mph    159
+Name: 32, dtype: int64",2
+1,5,4,4,4,2,"speed_mph    145
+speed_mph    145
+Name: 67, dtype: int64",2
+0,6,4,1,2,7,"speed_mph    156
+speed_mph    156
+Name: 92, dtype: int64",2
+1,6,4,3,5,2,"speed_mph    144
+speed_mph    144
+Name: 126, dtype: int64",1
+0,6,5,3,3,1,"speed_mph    0
+speed_mph    0
+Name: 10, dtype: int64",2
+0,7,5,0,2,2,"speed_mph    0
+speed_mph    0
+Name: 41, dtype: int64",2
+1,7,6,0,0,3,"speed_mph    0
+speed_mph    0
+Name: 87, dtype: int64",2
+1,7,6,1,0,3,"speed_mph    0
+speed_mph    0
+Name: 92, dtype: int64",2
+1,7,6,5,2,0,"speed_mph    207
+speed_mph    207
+Name: 0, dtype: int64",1
+0,7,6,5,3,6,"speed_mph    192
+speed_mph    192
+Name: 6, dtype: int64",1
+0,7,7,0,0,2,"speed_mph    139
+speed_mph    139
+Name: 37, dtype: int64",1
+1,7,7,2,4,0,"speed_mph    211
+speed_mph    211
+Name: 72, dtype: int64",1
+1,7,7,2,5,1,"speed_mph    135
+speed_mph    135
+Name: 78, dtype: int64",1
+0,7,8,0,0,4,"speed_mph    180
+speed_mph    180
+Name: 0, dtype: int64",2
+1,7,8,2,0,11,"speed_mph    170
+speed_mph    170
+Name: 10, dtype: int64",1
+1,7,8,5,3,2,"speed_mph    126
+speed_mph    126
+Name: 77, dtype: int64",1
+0,8,8,3,2,1,"speed_mph    157
+speed_mph    157
+Name: 109, dtype: int64",2
+0,8,8,4,2,3,"speed_mph    171
+speed_mph    171
+Name: 0, dtype: int64",2
+1,8,8,4,2,1,"speed_mph    168
+speed_mph    168
+Name: 1, dtype: int64",2
+0,8,8,5,3,3,"speed_mph    155
+speed_mph    155
+Name: 13, dtype: int64",2
+0,9,8,2,2,3,"speed_mph    152
+speed_mph    152
+Name: 44, dtype: int64",2
+1,9,8,4,5,4,"speed_mph    127
+speed_mph    127
+Name: 71, dtype: int64",1
+0,9,9,0,0,3,"speed_mph    182
+speed_mph    182
+Name: 73, dtype: int64",2
+1,9,9,2,1,3,"speed_mph    134
+speed_mph    134
+Name: 93, dtype: int64",1
+1,9,9,4,2,5,"speed_mph    146
+speed_mph    146
+Name: 115, dtype: int64",1
+0,9,9,5,4,4,"speed_mph    182
+speed_mph    182
+Name: 0, dtype: int64",1
+1,9,9,5,4,1,"speed_mph    157
+speed_mph    157
+Name: 1, dtype: int64",1
+1,10,9,2,0,1,"speed_mph    143
+speed_mph    143
+Name: 37, dtype: int64",2
+0,10,9,3,3,1,"speed_mph    168
+speed_mph    168
+Name: 62, dtype: int64",2
+1,11,9,0,0,3,"speed_mph    148
+speed_mph    148
+Name: 116, dtype: int64",1
+0,11,9,1,2,1,"speed_mph    165
+speed_mph    165
+Name: 12, dtype: int64",2
+1,11,9,3,4,3,"speed_mph    146
+speed_mph    146
+Name: 33, dtype: int64",1
+1,11,10,2,0,1,"speed_mph    169
+speed_mph    169
+Name: 69, dtype: int64",1
+0,11,10,3,2,6,"speed_mph    162
+speed_mph    162
+Name: 90, dtype: int64",2
+1,11,10,4,3,3,"speed_mph    149
+speed_mph    149
+Name: 100, dtype: int64",1
+0,11,11,0,0,1,"speed_mph    155
+speed_mph    155
+Name: 0, dtype: int64",2
+1,11,11,2,1,2,"speed_mph    143
+speed_mph    143
+Name: 22, dtype: int64",2
+0,12,11,5,5,2,"speed_mph    163
+speed_mph    163
+Name: 107, dtype: int64",1
+0,12,11,6,7,3,"speed_mph    149
+speed_mph    149
+Name: 5, dtype: int64",2
+0,12,11,12,12,4,"speed_mph    134
+speed_mph    134
+Name: 89, dtype: int64",2
+0,13,11,0,4,2,"speed_mph    0
+speed_mph    0
+Name: 0, dtype: int64",1
+1,13,12,0,0,2,"speed_mph    0
+speed_mph    0
+Name: 13, dtype: int64",1
+0,13,12,0,1,0,"speed_mph    0
+speed_mph    0
+Name: 31, dtype: int64",2
+1,13,13,1,0,2,"speed_mph    0
+speed_mph    0
+Name: 76, dtype: int64",1
+1,13,13,1,0,2,"speed_mph    0
+speed_mph    0
+Name: 83, dtype: int64",2
+0,13,13,3,1,1,"speed_mph    175
+speed_mph    175
+Name: 0, dtype: int64",1
+1,13,13,6,5,5,"speed_mph    140
+speed_mph    140
+Name: 38, dtype: int64",1
+0,13,13,6,5,1,"speed_mph    132
+speed_mph    132
+Name: 39, dtype: int64",2
+1,13,13,9,9,2,"speed_mph    144
+speed_mph    144
+Name: 88, dtype: int64",1
+0,13,13,10,10,1,"speed_mph    174
+speed_mph    174
+Name: 102, dtype: int64",2
+1,13,14,3,4,3,"speed_mph    127
+speed_mph    127
+Name: 40, dtype: int64",1
+0,13,14,4,4,1,"speed_mph    143
+speed_mph    143
+Name: 57, dtype: int64",2
+1,13,14,7,7,1,"speed_mph    123
+speed_mph    123
+Name: 96, dtype: int64",1
+0,13,14,9,10,1,"speed_mph    148
+speed_mph    148
+Name: 131, dtype: int64",1
+0,13,15,0,1,5,"speed_mph    199
+speed_mph    199
+Name: 0, dtype: int64",2
+1,13,15,2,3,3,"speed_mph    126
+speed_mph    126
+Name: 19, dtype: int64",1
+1,14,15,2,1,2,"speed_mph    111
+speed_mph    111
+Name: 55, dtype: int64",2
+1,15,15,2,0,0,"speed_mph    154
+speed_mph    154
+Name: 8, dtype: int64",2
+0,15,15,4,2,2,"speed_mph    164
+speed_mph    164
+Name: 47, dtype: int64",1
+0,16,15,0,1,2,"speed_mph    119
+speed_mph    119
+Name: 73, dtype: int64",1
+0,16,15,3,5,4,"speed_mph    152
+speed_mph    152
+Name: 118, dtype: int64",2
+0,16,15,3,5,9,"speed_mph    157
+speed_mph    157
+Name: 0, dtype: int64",1
+1,16,15,4,5,3,"speed_mph    131
+speed_mph    131
+Name: 1, dtype: int64",1
+1,16,15,4,5,1,"speed_mph    138
+speed_mph    138
+Name: 6, dtype: int64",2
+0,16,16,1,3,0,"speed_mph    193
+speed_mph    193
+Name: 26, dtype: int64",2
+0,16,17,0,0,1,"speed_mph    192
+speed_mph    192
+Name: 63, dtype: int64",2
+1,16,17,2,3,3,"speed_mph    132
+speed_mph    132
+Name: 87, dtype: int64",1
+0,16,17,3,5,2,"speed_mph    155
+speed_mph    155
+Name: 0, dtype: int64",2
+1,16,17,4,5,5,"speed_mph    159
+speed_mph    159
+Name: 6, dtype: int64",1
+1,16,17,8,7,2,"speed_mph    148
+speed_mph    148
+Name: 36, dtype: int64",2
+0,17,17,2,1,4,"speed_mph    147
+speed_mph    147
+Name: 57, dtype: int64",2
+1,17,17,3,3,7,"speed_mph    135
+speed_mph    135
+Name: 72, dtype: int64",1
+1,17,17,6,5,2,"speed_mph    130
+speed_mph    130
+Name: 100, dtype: int64",2
+1,18,17,0,0,1,"speed_mph    167
+speed_mph    167
+Name: 0, dtype: int64",1
+0,18,17,2,3,0,"speed_mph    179
+speed_mph    179
+Name: 28, dtype: int64",2
+0,18,17,6,7,2,"speed_mph    204
+speed_mph    204
+Name: 83, dtype: int64",1
+1,18,18,2,2,5,"speed_mph    214
+speed_mph    214
+Name: 105, dtype: int64",1
+0,18,18,4,5,5,"speed_mph    204
+speed_mph    204
+Name: 134, dtype: int64",1
+0,18,19,0,0,5,"speed_mph    143
+speed_mph    143
+Name: 0, dtype: int64",1
+1,18,19,2,0,1,"speed_mph    149
+speed_mph    149
+Name: 14, dtype: int64",1
+1,19,19,2,0,3,"speed_mph    155
+speed_mph    155
+Name: 64, dtype: int64",1
+0,19,19,4,1,0,"speed_mph    164
+speed_mph    164
+Name: 85, dtype: int64",1
+0,20,19,0,0,1,"speed_mph    196
+speed_mph    196
+Name: 0, dtype: int64",2
+1,20,19,1,1,1,"speed_mph    169
+speed_mph    169
+Name: 8, dtype: int64",1
+1,20,19,9,8,6,"speed_mph    127
+speed_mph    127
+Name: 105, dtype: int64",1
+0,21,19,1,2,3,"speed_mph    194
+speed_mph    194
+Name: 11, dtype: int64",2
+1,21,20,1,0,1,"speed_mph    179
+speed_mph    179
+Name: 51, dtype: int64",1
+1,21,20,2,1,4,"speed_mph    151
+speed_mph    151
+Name: 72, dtype: int64",1
+0,21,20,6,6,3,"speed_mph    183
+speed_mph    183
+Name: 1, dtype: int64",2
+0,21,20,8,9,1,"speed_mph    161
+speed_mph    161
+Name: 38, dtype: int64",2
+1,21,21,2,1,3,"speed_mph    154
+speed_mph    154
+Name: 65, dtype: int64",1
+1,21,21,2,2,3,"speed_mph    173
+speed_mph    173
+Name: 74, dtype: int64",2
+1,21,22,1,0,8,"speed_mph    178
+speed_mph    178
+Name: 105, dtype: int64",2
+0,21,22,1,0,0,"speed_mph    162
+speed_mph    162
+Name: 106, dtype: int64",2
+0,21,22,5,4,11,"speed_mph    178
+speed_mph    178
+Name: 23, dtype: int64",2
+0,21,22,6,7,4,"speed_mph    135
+speed_mph    135
+Name: 55, dtype: int64",2
+1,21,23,3,0,2,"speed_mph    121
+speed_mph    121
+Name: 81, dtype: int64",2
+0,22,23,0,0,4,"speed_mph    151
+speed_mph    151
+Name: 107, dtype: int64",2
+0,22,23,0,0,1,"speed_mph    182
+speed_mph    182
+Name: 114, dtype: int64",1
+1,22,23,2,2,3,"speed_mph    143
+speed_mph    143
+Name: 14, dtype: int64",1
+0,22,23,2,2,1,"speed_mph    146
+speed_mph    146
+Name: 15, dtype: int64",2
+1,22,23,4,4,5,"speed_mph    144
+speed_mph    144
+Name: 36, dtype: int64",1
+1,22,23,6,5,1,"speed_mph    186
+speed_mph    186
+Name: 57, dtype: int64",1
+0,23,23,1,2,1,"speed_mph    151
+speed_mph    151
+Name: 84, dtype: int64",2
+1,23,23,5,3,4,"speed_mph    130
+speed_mph    130
+Name: 4, dtype: int64",2
+1,24,24,2,2,1,"speed_mph    163
+speed_mph    163
+Name: 87, dtype: int64",2
+0,25,24,0,2,3,"speed_mph    156
+speed_mph    156
+Name: 140, dtype: int64",2
+1,25,24,0,2,0,"speed_mph    200
+speed_mph    200
+Name: 0, dtype: int64",2
+0,25,24,0,3,1,"speed_mph    181
+speed_mph    181
+Name: 2, dtype: int64",2
+1,25,25,1,1,7,"speed_mph    161
+speed_mph    161
+Name: 31, dtype: int64",1
+0,25,26,1,1,1,"speed_mph    169
+speed_mph    169
+Name: 9, dtype: int64",2
+1,26,27,1,0,4,"speed_mph    186
+speed_mph    186
+Name: 106, dtype: int64",2
